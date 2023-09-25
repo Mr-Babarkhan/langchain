@@ -2,7 +2,7 @@
 
 <h4>1) Create and navigate to new directory</h4>
 
-   mkdir 01-Guidelines
+   mkdir 01-Guidelines<br>
    cd 01-Guidelines
 
 <h4>2) Initiate a node project in the directory</h4>
@@ -21,30 +21,30 @@
     
 <h4>5) Update tsconfig.json by changing properties as follows</h4>
 
-&nbsp;{
- &nbsp; "compilerOptions": {
-   &nbsp;  ...
-  &nbsp;  "target": "ES2020", // or higher
-    &nbsp;"module": "nodenext"
+{
+  "compilerOptions": {
+    ...
+  "target": "ES2020", // or higher
+    "module": "nodenext"
   }
 }
 <h4>6) Update package.json and following to it before scripts</h4>
 
 "type": "module",
 <h4>7) Create API key from open AI</h4>
-<ul><li>
-&nbsp;Login to Open AI
-&nbsp;Navigate to API page
-&nbsp;Click your profile on the top right corner
-&nbsp;Check your free limit from Usage tab, if limit expired buy credits or use some different account
-&nbsp;Click View API Keys
-&nbsp;From the left sidebar open Api Keys
-&nbsp;Create new secret key
-&nbsp;Save your generated key
+<ul>
+<li>Login to Open AI</li>
+<li>Navigate to API page</li>
+<li>Click your profile on the top right corner</li>
+<li>Check your free limit from Usage tab, if limit expired buy credits or use some different account</li>
+<li>Click View API Keys</li>
+<li>From the left sidebar open Api Keys</li>
+<li>Create new secret key</li>
+<li>Save your generated key</li>
 
-</li></ul>
+</ul>
 <h4>8) Create .env file </h4>
-&nbsp;OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
+OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
 <h4>9) Create .gitignore file</h4>
 
 &nbsp;node_modules
