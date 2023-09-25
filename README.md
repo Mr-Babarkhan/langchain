@@ -21,13 +21,13 @@
     
 <h4>5) Update tsconfig.json by changing properties as follows</h4>
 
-{
-  "compilerOptions": {
-    ...
-  "target": "ES2020", // or higher
-    "module": "nodenext"
-  }
-}
+{<br>
+  "compilerOptions": {<br>
+    ...<br>
+  "target": "ES2020", // or higher<br>
+    "module": "nodenext"<br>
+  }<br>
+}<br>
 <h4>6) Update package.json and following to it before scripts</h4>
 
 "type": "module",
@@ -47,29 +47,29 @@
 OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
 <h4>9) Create .gitignore file</h4>
 
-&nbsp;node_modules
-&nbsp;.env
+node_modules<br>
+.env
 <h4>10) Create app.ts file</h4>
 
-&nbsp;import { OpenAI } from "langchain/llms/openai";
-&nbsp;import "dotenv/config";
-&nbsp;const llm = new OpenAI({
-&nbsp;  openAIApiKey: process.env.OPENAI_API_KEY,
- &nbsp; temperature: 0.9,
-&nbsp;});
-&nbsp;async function main() {
-&nbsp;  const result = await llm.predict(
- &nbsp;   `What would be a good company name for a company that makes colorful socks?`
- &nbsp; );
-&nbsp;  console.log(result);
-&nbsp;}
-&nbsp;main();
+import { OpenAI } from "langchain/llms/openai";<br>
+import "dotenv/config";<br>
+const llm = new OpenAI({<br>
+  openAIApiKey: process.env.OPENAI_API_KEY,<br>
+temperature: 0.9,<br>
+});<br>
+async function main() {<br>
+ const result = await llm.predict(<br>
+    `What would be a good company name for a company that makes colorful socks?`<br>
+ );<br>
+  console.log(result);<br>
+}<br>
+main();<br>
 10) Transforms TypeScript code into JavaScript code
 
 &nbsp;tsc
 <h4>11) Run the app</h4>
 
-&nbsp;node app.js
-&nbsp;Running this code will respond with some answer. In my case I got the following response
+&nbsp;node app.js<br>
+&nbsp;Running this code will respond with some answer. In my case I got the following response<br>
 
 &nbsp;Socktastik.
