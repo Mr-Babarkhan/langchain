@@ -2,11 +2,11 @@
 
 <h4>1) Create and navigate to new directory</h4>
 
-   &nbsp;mkdir 01-Guidelines
-  &nbsp; cd 01-Guidelines
+   mkdir 01-Guidelines
+   cd 01-Guidelines
 
 <h4>2) Initiate a node project in the directory</h4>
-    &nbsp; npm init -y
+     npm init -y
    
 <h4>3) Install required packages</h4>
 
